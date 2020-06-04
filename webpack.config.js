@@ -37,6 +37,9 @@ module.exports = (env) => {
       // later), index.html should be served in place of 404 responses.
       historyApiFallback: true,
 
+      //Enabling Hot Module Replacement
+      hot: true,
+
       // Show a full-screen overlay in the browser when there are compiler
       // errors or warnings.
       overlay: {
@@ -93,6 +96,10 @@ module.exports = (env) => {
                     // targets: "",
                   },
                 ],
+                // The react preset includes several plugins that are required to write
+                // a React app. For example, it transforms JSX:
+                // <div> -> React.createElement('div')
+                "@babel/preset-react",
               ],
             },
           },
