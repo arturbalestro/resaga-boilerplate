@@ -40,6 +40,9 @@ module.exports = (env) => {
       //Enabling Hot Module Replacement
       hot: true,
 
+      //Opening browser automatically
+      open: true,
+
       // Show a full-screen overlay in the browser when there are compiler
       // errors or warnings.
       overlay: {
@@ -101,6 +104,7 @@ module.exports = (env) => {
                 // <div> -> React.createElement('div')
                 "@babel/preset-react",
               ],
+              plugins: ["react-hot-loader/babel"],
             },
           },
         },

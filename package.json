@@ -3,7 +3,7 @@
     "babel-dist": "./node_modules/.bin/babel src --out-dir dist",
     "build": "webpack --env.environment=production --config webpack.config.js",
     "dev": "webpack --env.environment=development --config webpack.config.js",
-    "devserver": "webpack-dev-server --env.environment=development --config webpack.config.js"
+    "start": "webpack-dev-server --env.environment=development --hot --config webpack.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
