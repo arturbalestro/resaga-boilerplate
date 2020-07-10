@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "babel-dist": "./node_modules/.bin/babel src --out-dir dist",
+    "babel-dist": "babel src --out-dir dist",
     "build": "webpack --env.environment=production --config webpack.config.js",
     "dev": "webpack --env.environment=development --config webpack.config.js",
     "start": "webpack-dev-server --env.environment=development --hot --config webpack.config.js"
@@ -26,5 +26,19 @@
     "styled-components": "^5.1.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "name": "resaga-boilerplate",
+  "description": "Boilerplate to setup an application with React, Redux, Redux-Saga, Webpack and Babel.",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturbalestro/resaga-boilerplate.git"
+  },
+  "author": "Artur Balestro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arturbalestro/resaga-boilerplate/issues"
+  },
+  "homepage": "https://github.com/arturbalestro/resaga-boilerplate#readme"
 }
